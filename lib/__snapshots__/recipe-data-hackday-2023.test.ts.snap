@@ -6,5 +6,115 @@ exports[`The RecipeDataHackday2023 stack matches the snapshot 1`] = `
     "gu:cdk:constructs": [],
     "gu:cdk:version": "TEST",
   },
+  "Resources": {
+    "RecipeEditsTableEDB53D3E": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "path",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "recipeId",
+            "AttributeType": "N",
+          },
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "path",
+            "KeyType": "HASH",
+          },
+          {
+            "AttributeName": "recipeId",
+            "KeyType": "RANGE",
+          },
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5,
+        },
+        "TableName": "recipes-edited",
+        "Tags": [
+          {
+            "Key": "App",
+            "Value": "recipe-data-hackday-2023",
+          },
+          {
+            "Key": "gu:cdk:version",
+            "Value": "TEST",
+          },
+          {
+            "Key": "gu:repo",
+            "Value": "guardian/recipe-data-hackday-2023",
+          },
+          {
+            "Key": "Stack",
+            "Value": "playground",
+          },
+          {
+            "Key": "Stage",
+            "Value": "TEST",
+          },
+        ],
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "RecipeTable9AD52CED": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "path",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "recipeId",
+            "AttributeType": "N",
+          },
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "path",
+            "KeyType": "HASH",
+          },
+          {
+            "AttributeName": "recipeId",
+            "KeyType": "RANGE",
+          },
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5,
+        },
+        "TableName": "recipes",
+        "Tags": [
+          {
+            "Key": "App",
+            "Value": "recipe-data-hackday-2023",
+          },
+          {
+            "Key": "gu:cdk:version",
+            "Value": "TEST",
+          },
+          {
+            "Key": "gu:repo",
+            "Value": "guardian/recipe-data-hackday-2023",
+          },
+          {
+            "Key": "Stack",
+            "Value": "playground",
+          },
+          {
+            "Key": "Stage",
+            "Value": "TEST",
+          },
+        ],
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
+  },
 }
 `;
