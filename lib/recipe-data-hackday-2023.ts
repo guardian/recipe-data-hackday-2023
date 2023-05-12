@@ -1,8 +1,7 @@
 import type { GuStackProps } from '@guardian/cdk/lib/constructs/core';
 import { GuStack } from '@guardian/cdk/lib/constructs/core';
-import { Tags } from 'aws-cdk-lib';
+import { Tags, aws_s3 as s3 } from 'aws-cdk-lib';
 import type { App } from 'aws-cdk-lib';
-import { aws_s3 as s3 } from 'aws-cdk-lib';
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
 
 export class RecipeDataHackday2023 extends GuStack {
