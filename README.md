@@ -1,9 +1,11 @@
 # Recipe Data, Hack Day 2023
 A copy of the databases from https://github.com/guardian/recipes, deployed to the Playground account for the food-themed Hack Day in May 2023.
 
-Find the data in the DynamoDb tables `recipes` and `recipes-edited`, within the Playground account, in `eu-west-1`.
+In the Playground account, within the `eu-west-1` region, find recipe data in:
+  - DynamoDb tables `recipes` and `recipes-edited`
+  - S3 bucket `recipe-data-hackday-2023`
 
-## Process
+## Data import process
 1. Export data from DynamoDb tables in the Composer account (`recipes`, and `recipes-edited`)
 2. Import the data into DynamoDb tables in the Playground account (`recipes`, and `recipes-edited`)
 

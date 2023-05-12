@@ -118,7 +118,7 @@ exports[`The RecipeDataHackday2023 stack matches the snapshot 1`] = `
     "StructuredRecipesFF7C8293": {
       "DeletionPolicy": "Retain",
       "Properties": {
-        "BucketName": "recipes",
+        "BucketName": "recipe-data-hackday-2023",
         "Tags": [
           {
             "Key": "App",
