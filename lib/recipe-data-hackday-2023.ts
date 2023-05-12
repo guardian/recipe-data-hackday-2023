@@ -21,8 +21,8 @@ export class RecipeDataHackday2023 extends GuStack {
 		});
 
 		new s3.Bucket(this, 'StructuredRecipes', {
-			bucketName: 'recipes',
-		}); 
+			bucketName: 'recipe-data-hackday-2023',
+		});
 
 		Tags.of(this).add('App', 'recipe-data-hackday-2023');
 	}
