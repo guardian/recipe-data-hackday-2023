@@ -21,4 +21,4 @@ There was ~3MB of data to copy, so rather than investing too much time in this, 
 The tables are created via CDK, see [lib/recipe-data-hackday-2023](lib/recipe-data-hackday-2023.ts).
 
 ## TODO after Hack Day
-- [ ] Delete the CloudFormation stack in the Playground account
+- [X] Delete the CloudFormation stack in the Playground account. Completed on 1 June 2023. This repository can be archieved now too.
